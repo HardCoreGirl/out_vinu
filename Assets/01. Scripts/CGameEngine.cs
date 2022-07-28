@@ -53,44 +53,20 @@ public class CGameEngine : MonoBehaviour
 
     private int m_nGameStep = 0;
 
-    private float[] m_listXpoz = new float[9];
-    private float[] m_listYpoz = new float[4];
-
     // Start is called before the first frame update
     void Start()
     {
-        m_listXpoz[0] = -3.89f;
-        m_listXpoz[1] = -2.91f;
-        m_listXpoz[2] = -1.95f;
-        m_listXpoz[3] = -0.97f;
-        m_listXpoz[4] = 0f;
-        m_listXpoz[5] = 0.97f;
-        m_listXpoz[6] = 1.95f;
-        m_listXpoz[7] = 2.91f;
-        m_listXpoz[8] = 3.89f;
-
-        m_listYpoz[0] = 1.45f;
-        m_listYpoz[1] = 0.49f;
-        m_listYpoz[2] = -0.49f;
-        m_listYpoz[3] = -1.45f;
-
-        //HideAllTestBG();
-        //ShowTestBG(0);
+        CGameData.Instance.InitGameData();
 
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideBtnsNext();
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideAnswer();
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideAllQuiz();
 
-        m_goTutorial.SetActive(false);
+        //m_goTutorial.SetActive(false);
 
-        HideAnswerTile();
+        //HideAnswerTile();
 
-        //for (int i = 0; i < m_listQuizMath.Length; i++)
-        //{
-        //    m_listQuizMath[i].SetActive(false);
-        //}
-
-        StartCoroutine("ProcessShowTile");
+        //PlayGridStage();
     }
 
     // Update is called once per frame
@@ -99,13 +75,32 @@ public class CGameEngine : MonoBehaviour
         
     }
 
-    IEnumerator ProcessShowTile()
+    public void PlayGridStage()
+    {
+        int nStage = CGameData.Instance.GetStage();
+        Debug.Log(nStage);
+        if( nStage <= 2)     // 0, 1, 2
+        {
+            PlayGridStageMath();
+        } else if (nStage <= 5)  // 3, 4, 5
+        {
+            PlayGridStageEnglish();
+        } else   // 6, 7, 8
+        {
+            PlayGridStagePic();
+        }
+    }
+
+    public void PlayGridStageMath()
+    {
+        StartCoroutine("ProcessShowTileMath");
+    }
+
+    IEnumerator ProcessShowTileMath()
     {
         float fInterval = 0.1f;
 
         m_goQuiz.SetActive(true);
-
-        
 
         for (int i = 0; i < m_listFrameParent.Length; i++)
         {
@@ -166,7 +161,7 @@ public class CGameEngine : MonoBehaviour
 
         SetGameStep(1);
 
-        m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowQuiz(0);
+        m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowQuiz(CGameData.Instance.GetStage());
         
         m_goQuiz.SetActive(false);
 
@@ -176,10 +171,190 @@ public class CGameEngine : MonoBehaviour
         }
 
         m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowBtnsNext();
-
-        
-
     }
+
+    public void PlayGridStageEnglish()
+    {
+        StartCoroutine("ProcessShowTileEnglish");
+    }
+
+    IEnumerator ProcessShowTileEnglish()
+    {
+        float fInterval = 0.1f;
+
+        m_goQuiz.SetActive(true);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("", i, 0, 0, 1);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("O", i, 1, 0);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("K", i, 2, 0);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("F", i, 1, 1);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("P", i, 2, 1);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("H", i, 3, 1);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("Y", i, 2, 2);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("A", i, 3, 2);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+
+        yield return new WaitForSeconds(1.0f);
+
+        SetGameStep(1);
+
+        m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowQuiz(CGameData.Instance.GetStage());
+
+        m_goQuiz.SetActive(false);
+
+        for (int i = 0; i < m_listQuizMath.Length; i++)
+        {
+            m_listQuizMath[i].SetActive(true);
+        }
+
+        m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowBtnsNext();
+    }
+
+    public void PlayGridStagePic()
+    {
+        StartCoroutine("ProcessShowTilePic");
+    }
+
+    IEnumerator ProcessShowTilePic()
+    {
+        float fInterval = 0.1f;
+
+        m_goQuiz.SetActive(true);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("", i, 2, 1, 1);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("PLANE", i, 2, 2);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("SHIP", i, 3, 2);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("BICYCLE", i, 4, 2);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("HELICOPTER", i, 3, 3);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        for (int i = 0; i < m_listFrameParent.Length; i++)
+        {
+            GameObject goTile = Instantiate(Resources.Load("Prefabs/Tile") as GameObject);
+            goTile.transform.SetParent(m_listFrameParent[i].transform);
+
+            goTile.GetComponent<CTile>().InitObject("CAR", i, 4, 3);
+        }
+        yield return new WaitForSeconds(fInterval);
+
+        yield return new WaitForSeconds(1.0f);
+
+        SetGameStep(1);
+
+        m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowQuiz(CGameData.Instance.GetStage());
+
+        m_goQuiz.SetActive(false);
+
+        for (int i = 0; i < m_listQuizMath.Length; i++)
+        {
+            m_listQuizMath[i].SetActive(true);
+        }
+
+        m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowBtnsNext();
+    }
+
+
 
     public void SetGameStep(int nStep)
     {
@@ -231,13 +406,13 @@ public class CGameEngine : MonoBehaviour
             m_listAnswerTile[i].SetActive(true);
 
             if (i == 0)
-                m_listAnswerTile[i].transform.localPosition = new Vector3(-m_listXpoz[nXPoz], m_listYpoz[nYPoz], 0);
+                m_listAnswerTile[i].transform.localPosition = new Vector3(-CGameData.Instance.GetGridXPoz(nXPoz), CGameData.Instance.GetGridYPoz(nYPoz), 0);
             else if (i == 1)
-                m_listAnswerTile[i].transform.localPosition = new Vector3(m_listXpoz[nXPoz], m_listYpoz[nYPoz], 0);
+                m_listAnswerTile[i].transform.localPosition = new Vector3(CGameData.Instance.GetGridXPoz(nXPoz), CGameData.Instance.GetGridYPoz(nYPoz), 0);
             else if (i == 2)
-                m_listAnswerTile[i].transform.localPosition = new Vector3(m_listXpoz[nXPoz], m_listYpoz[nYPoz], 0);
+                m_listAnswerTile[i].transform.localPosition = new Vector3(CGameData.Instance.GetGridXPoz(nXPoz), CGameData.Instance.GetGridYPoz(nYPoz), 0);
             else if (i == 3)
-                m_listAnswerTile[i].transform.localPosition = new Vector3(-m_listXpoz[nXPoz], m_listYpoz[nYPoz], 0);
+                m_listAnswerTile[i].transform.localPosition = new Vector3(-CGameData.Instance.GetGridXPoz(nXPoz), CGameData.Instance.GetGridYPoz(nYPoz), 0);
         }    
     }
 

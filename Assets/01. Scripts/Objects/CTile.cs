@@ -5,31 +5,13 @@ using UnityEngine;
 public class CTile : MonoBehaviour
 {
 
-    public GameObject[] m_listTile = new GameObject[37];
+    public GameObject[] m_listTile = new GameObject[42];
 
     public GameObject m_goStart;
 
 
-    private float[] m_listXpoz = new float[9];
-    private float[] m_listYpoz = new float[4];
-
-
     private void Awake()
     {
-        m_listXpoz[0] = -3.89f;
-        m_listXpoz[1] = -2.91f;
-        m_listXpoz[2] = -1.95f;
-        m_listXpoz[3] = -0.97f;
-        m_listXpoz[4] = 0f;
-        m_listXpoz[5] = 0.97f;
-        m_listXpoz[6] = 1.95f;
-        m_listXpoz[7] = 2.91f;
-        m_listXpoz[8] = 3.89f;
-
-        m_listYpoz[0] = 1.45f;
-        m_listYpoz[1] = 0.49f;
-        m_listYpoz[2] = -0.49f;
-        m_listYpoz[3] = -1.45f;
     }
     // Start is called before the first frame update
     void Start()
@@ -47,22 +29,20 @@ public class CTile : MonoBehaviour
         HideAllTiles();
         ShowTile(strText);
 
-        Debug.Log(m_listXpoz[nXPoz]);
-
         if (nFrame == 0)
         {
-            transform.localPosition = new Vector3(-m_listXpoz[nXPoz], m_listYpoz[nYPoz], 0);
+            transform.localPosition = new Vector3(-CGameData.Instance.GetGridXPoz(nXPoz), CGameData.Instance.GetGridYPoz(nYPoz), 0);
             transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
         }
         if (nFrame == 1)
         {
-            transform.localPosition = new Vector3(m_listXpoz[nXPoz], m_listYpoz[nYPoz], 0);
+            transform.localPosition = new Vector3(CGameData.Instance.GetGridXPoz(nXPoz), CGameData.Instance.GetGridYPoz(nYPoz), 0);
             transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
         }
         if (nFrame == 2)
-            transform.localPosition = new Vector3(m_listXpoz[nXPoz], m_listYpoz[nYPoz], 0);
+            transform.localPosition = new Vector3(CGameData.Instance.GetGridXPoz(nXPoz), CGameData.Instance.GetGridYPoz(nYPoz), 0);
         if (nFrame == 3)
-            transform.localPosition = new Vector3(-m_listXpoz[nXPoz], m_listYpoz[nYPoz], 0);
+            transform.localPosition = new Vector3(-CGameData.Instance.GetGridXPoz(nXPoz), CGameData.Instance.GetGridYPoz(nYPoz), 0);
 
         if (nStart == 0)
             m_goStart.SetActive(false);
@@ -220,6 +200,21 @@ public class CTile : MonoBehaviour
                 break;
             case "Z":
                 m_listTile[36].SetActive(true);
+                break;
+            case "BICYCLE":
+                m_listTile[37].SetActive(true);
+                break;
+            case "HELICOPTER":
+                m_listTile[38].SetActive(true);
+                break;
+            case "CAR":
+                m_listTile[39].SetActive(true);
+                break;
+            case "SHIP":
+                m_listTile[40].SetActive(true);
+                break;
+            case "PLANE":
+                m_listTile[41].SetActive(true);
                 break;
             default:
                 m_listTile[10].SetActive(true);
