@@ -286,7 +286,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 433443040}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -580,7 +580,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 196617375}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -816,7 +816,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 2
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &30389160
 SpriteRenderer:
@@ -859,7 +859,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.16862746, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1160,7 +1160,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2144429109}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -1293,7 +1293,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 974395707}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -2986,8 +2986,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118899290}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.5949998, y: -0.88999987, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2, y: 3.858, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 29
@@ -3068,8 +3068,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122084839}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.125, y: -0.88999987, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.7, y: -0.5, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 18
@@ -3115,7 +3115,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.15294118, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4212,7 +4212,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 477899908}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -4448,7 +4448,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 1
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &161552405
 SpriteRenderer:
@@ -4491,7 +4491,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.16862746, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4684,7 +4684,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 4
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &166339732
 SpriteRenderer:
@@ -4727,7 +4727,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0.68235296, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5324,11 +5324,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 196617373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae0e0ebb4f5ca3438a5a1b864a5a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a1a78266b77b41ae99a72f17b0680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgColorBoard: {fileID: 1819995135}
-  m_sprColor: {fileID: 1466855214}
+  m_sprColor:
+  - {fileID: 1521207209}
+  - {fileID: 2075915395}
+  - {fileID: 263772552}
+  - {fileID: 263772552}
+  - {fileID: 474404378}
+  - {fileID: 1262412104}
+  - {fileID: 1911310594}
+  - {fileID: 1911310594}
   m_listColorValue:
   - {fileID: 77180694}
   - {fileID: 311968195}
@@ -5441,7 +5449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &203655113
 SpriteRenderer:
@@ -5484,7 +5492,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5865,7 +5873,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1923291083}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -6407,7 +6415,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 433443040}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -7310,7 +7318,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 20
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &263772552
 SpriteRenderer:
@@ -7353,7 +7361,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.7490196, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7813,7 +7821,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 196617375}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -8442,8 +8450,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288996423}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.5949998, y: -1.295, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.2, y: -7.06, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 0
@@ -8489,7 +8497,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.16862746, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10318,8 +10326,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377254868}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.11499977, y: -0.88999987, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.9, y: 1.66, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 21
@@ -10365,7 +10373,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.7490196, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11229,7 +11237,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 974395707}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -11614,8 +11622,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410682801}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.35500002, y: -0.88999987, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.9, y: 3.858, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 26
@@ -11661,7 +11669,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12240,11 +12248,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 432967845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae0e0ebb4f5ca3438a5a1b864a5a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a1a78266b77b41ae99a72f17b0680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgColorBoard: {fileID: 1944898281}
-  m_sprColor: {fileID: 84963824}
+  m_sprColor:
+  - {fileID: 1735055108}
+  - {fileID: 1743737393}
+  - {fileID: 841290752}
+  - {fileID: 841290752}
+  - {fileID: 607809179}
+  - {fileID: 1577454098}
+  - {fileID: 118899292}
+  - {fileID: 118899292}
   m_listColorValue:
   - {fileID: 1839152594}
   - {fileID: 470743065}
@@ -12298,11 +12314,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 433443038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae0e0ebb4f5ca3438a5a1b864a5a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a1a78266b77b41ae99a72f17b0680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgColorBoard: {fileID: 278607552}
-  m_sprColor: {fileID: 2019807745}
+  m_sprColor:
+  - {fileID: 1069745263}
+  - {fileID: 1584451126}
+  - {fileID: 1390571584}
+  - {fileID: 1697501433}
+  - {fileID: 1624671075}
+  - {fileID: 1545882357}
+  - {fileID: 1162951140}
+  - {fileID: 492775009}
   m_listColorValue:
   - {fileID: 1965428853}
   - {fileID: 1346142287}
@@ -12391,7 +12415,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 196617375}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -12626,11 +12650,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442342315}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.35500002, y: -1.295, z: 0}
+  m_LocalPosition: {x: 0.35500002, y: -1.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &442342317
 SpriteRenderer:
@@ -12673,7 +12697,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0.68235296, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12767,7 +12791,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1923291083}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -12900,7 +12924,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1923291083}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -13433,8 +13457,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474404376}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.11499977, y: -0.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.595, y: -4.88, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 7
@@ -13480,7 +13504,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.9607844, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13539,11 +13563,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 477899906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae0e0ebb4f5ca3438a5a1b864a5a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a1a78266b77b41ae99a72f17b0680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgColorBoard: {fileID: 1905666541}
-  m_sprColor: {fileID: 855474950}
+  m_sprColor:
+  - {fileID: 442342317}
+  - {fileID: 166339732}
+  - {fileID: 1602033576}
+  - {fileID: 883821017}
+  - {fileID: 2057985712}
+  - {fileID: 1644369011}
+  - {fileID: 377254870}
+  - {fileID: 516390308}
   m_listColorValue:
   - {fileID: 1336754507}
   - {fileID: 758774992}
@@ -13769,7 +13801,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 974395707}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -13953,8 +13985,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492775007}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.125, y: 1.1099999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.595, y: 6.04, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 32
@@ -14000,7 +14032,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.15294118, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14059,11 +14091,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 499343280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae0e0ebb4f5ca3438a5a1b864a5a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a1a78266b77b41ae99a72f17b0680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgColorBoard: {fileID: 1537227555}
-  m_sprColor: {fileID: 1014074172}
+  m_sprColor:
+  - {fileID: 1147057328}
+  - {fileID: 1835089573}
+  - {fileID: 1783286301}
+  - {fileID: 1273551994}
+  - {fileID: 1624487193}
+  - {fileID: 1055947450}
+  - {fileID: 1404705981}
+  - {fileID: 1762761921}
   m_listColorValue:
   - {fileID: 92290441}
   - {fileID: 1423489513}
@@ -14131,8 +14171,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516390306}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.11499977, y: 1.1099999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.9, y: 6.04, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 31
@@ -14178,7 +14218,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.7490196, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14213,8 +14253,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516993178}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.36500025, y: -0.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.9, y: -0.5, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 16
@@ -14260,7 +14300,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.87843144, b: 0.45882356, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14457,7 +14497,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 30
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &523128292
 SpriteRenderer:
@@ -14500,7 +14540,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.9450981, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15416,8 +15456,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553670077}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.35500002, y: 0.71000004, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.2, y: 3.858, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 25
@@ -15463,7 +15503,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16223,7 +16263,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 477899908}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -16484,8 +16524,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607809177}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.125, y: -1.295, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2, y: -4.88, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 9
@@ -16531,7 +16571,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.6627451, g: 1, b: 0.29411766, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17468,7 +17508,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1923291083}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -17734,7 +17774,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 433443040}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -18530,7 +18570,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 22
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &656921002
 SpriteRenderer:
@@ -18573,7 +18613,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.15294118, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19241,7 +19281,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2144429109}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -19606,7 +19646,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1268173477}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -20361,7 +20401,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 499343282}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -20494,7 +20534,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1268173477}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -21291,8 +21331,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757625551}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.35500002, y: -0.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2, y: -7.06, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 4
@@ -21338,7 +21378,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0.68235296, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21631,7 +21671,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 432967847}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -22201,8 +22241,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782263408}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.5949998, y: 0.71000004, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.7, y: 3.858, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 28
@@ -22994,8 +23034,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819038865}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.5949998, y: 1.1099999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2, y: 6.04, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 34
@@ -23803,7 +23843,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 15
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &841290752
 SpriteRenderer:
@@ -23846,7 +23886,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.9450981, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24239,7 +24279,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 33
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &883821017
 SpriteRenderer:
@@ -24282,7 +24322,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24451,7 +24491,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1268173477}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -24620,7 +24660,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 196617375}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -24773,8 +24813,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914441139}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.36500025, y: 0.71000004, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.2, y: -0.5, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 15
@@ -24820,7 +24860,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.9450981, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24914,7 +24954,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 974395707}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -25126,7 +25166,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 432967847}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -25279,8 +25319,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932053400}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.11499977, y: 0.30900002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.7, y: -4.88, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 8
@@ -25326,7 +25366,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.9607844, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25708,7 +25748,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 499343282}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -26388,8 +26428,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963894086}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.11499977, y: 0.71000004, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.2, y: 1.66, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 20
@@ -26435,7 +26475,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.7490196, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26602,7 +26642,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2144429109}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -26779,11 +26819,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 974395705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae0e0ebb4f5ca3438a5a1b864a5a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a1a78266b77b41ae99a72f17b0680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgColorBoard: {fileID: 875818585}
-  m_sprColor: {fileID: 1503061026}
+  m_sprColor:
+  - {fileID: 1649675774}
+  - {fileID: 161552405}
+  - {fileID: 30389160}
+  - {fileID: 1387007739}
+  - {fileID: 288996425}
+  - {fileID: 1568431385}
+  - {fileID: 963894088}
+  - {fileID: 1846780031}
   m_listColorValue:
   - {fileID: 861461086}
   - {fileID: 794394174}
@@ -27659,7 +27707,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 499343282}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -28349,8 +28397,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055947448}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.36500025, y: -0.88999987, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.7, y: -2.68, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 13
@@ -28396,7 +28444,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.9450981, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28510,11 +28558,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069745261}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.11499977, y: -1.295, z: 0}
+  m_LocalPosition: {x: 0.11499977, y: -1.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1069745263
 SpriteRenderer:
@@ -28557,7 +28605,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.9607844, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28651,7 +28699,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 433443040}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -28879,8 +28927,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084578340}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.35500002, y: 0.30900002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.2, y: -4.88, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 5
@@ -28926,7 +28974,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0.68235296, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29410,7 +29458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1102271194
 Transform:
   m_ObjectHideFlags: 0
@@ -29931,7 +29979,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 27
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1137717583
 SpriteRenderer:
@@ -30325,11 +30373,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147057326}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.125, y: -1.295, z: 0}
+  m_LocalPosition: {x: -0.125, y: -1.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 9
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1147057328
 SpriteRenderer:
@@ -30372,7 +30420,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.6627451, g: 1, b: 0.29411766, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30466,7 +30514,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 432967847}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -30619,8 +30667,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160054852}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.36500025, y: -0.089999914, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2, y: -2.68, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 14
@@ -30666,7 +30714,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.9450981, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30739,8 +30787,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162951138}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.125, y: -0.089999914, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.595, y: 1.66, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 22
@@ -30786,7 +30834,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.15294118, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31674,7 +31722,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 433443040}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -32102,7 +32150,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1228289123
 SpriteRenderer:
@@ -32145,7 +32193,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.87843144, b: 0.45882356, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32636,7 +32684,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2144429109}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -33170,7 +33218,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 499343282}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -33358,8 +33406,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262412102}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.36500025, y: 0.30900002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.595, y: -0.5, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 17
@@ -33405,7 +33453,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.87843144, b: 0.45882356, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33464,11 +33512,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1268173475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae0e0ebb4f5ca3438a5a1b864a5a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a1a78266b77b41ae99a72f17b0680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgColorBoard: {fileID: 675919394}
-  m_sprColor: {fileID: 345855110}
+  m_sprColor:
+  - {fileID: 2068281514}
+  - {fileID: 656921002}
+  - {fileID: 2140155891}
+  - {fileID: 2140155891}
+  - {fileID: 932053402}
+  - {fileID: 122084841}
+  - {fileID: 782263410}
+  - {fileID: 782263410}
   m_listColorValue:
   - {fileID: 461317358}
   - {fileID: 1549602718}
@@ -33577,7 +33633,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1273551994
 SpriteRenderer:
@@ -33620,7 +33676,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.15294118, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34149,7 +34205,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 432967847}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -34516,7 +34572,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 432967847}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -34882,7 +34938,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2144429109}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -35015,7 +35071,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 477899908}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -35172,7 +35228,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 28
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1338606211
 SpriteRenderer:
@@ -35757,7 +35813,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 29
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1361244688
 SpriteRenderer:
@@ -35997,7 +36053,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 34
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1387007739
 SpriteRenderer:
@@ -36212,7 +36268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 8
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1390571584
 SpriteRenderer:
@@ -36255,7 +36311,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.9607844, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -36349,7 +36405,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1268173477}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -36710,8 +36766,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404705979}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.125, y: 0.71000004, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.7, y: 1.66, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 23
@@ -36757,7 +36813,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.15294118, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -37469,7 +37525,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1923291083}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -38636,7 +38692,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 432967847}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -39661,7 +39717,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 499343282}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -39872,7 +39928,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 21
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1521207209
 SpriteRenderer:
@@ -39915,7 +39971,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.7490196, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -40393,7 +40449,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 477899908}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -40505,8 +40561,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545882355}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.36500025, y: -1.295, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.595, y: -2.68, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 12
@@ -40552,7 +40608,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.87843144, b: 0.45882356, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -40666,8 +40722,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568431383}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.125, y: -0.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.2, y: -2.68, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 10
@@ -40713,7 +40769,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.6627451, g: 1, b: 0.29411766, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -40748,8 +40804,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577454096}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.11499977, y: -0.089999914, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2, y: -0.5, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 19
@@ -40795,7 +40851,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.7490196, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41033,7 +41089,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 7
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1584451126
 SpriteRenderer:
@@ -41076,7 +41132,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.9607844, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41502,7 +41558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 5
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1602033576
 SpriteRenderer:
@@ -41545,7 +41601,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0.68235296, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42008,8 +42064,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624487191}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.35500002, y: -1.295, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.7, y: -7.06, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 3
@@ -42055,7 +42111,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0.68235296, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42090,8 +42146,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624671073}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.5949998, y: 0.30900002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.595, y: -7.06, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 2
@@ -42137,7 +42193,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.16862746, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42559,7 +42615,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1268173477}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -42633,8 +42689,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644369009}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.125, y: 0.30900002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.9, y: -2.68, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 11
@@ -42680,7 +42736,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.6627451, g: 1, b: 0.29411766, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42715,7 +42771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649675772}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.5949998, y: -1.295, z: 0}
+  m_LocalPosition: {x: 0.5949998, y: -1.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
@@ -42762,7 +42818,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.16862746, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -43408,7 +43464,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1697501433
 SpriteRenderer:
@@ -43451,7 +43507,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.7490196, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -43583,7 +43639,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 477899908}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -44145,7 +44201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1735055108
 SpriteRenderer:
@@ -44188,7 +44244,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.9450981, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -44541,7 +44597,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 14
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1743737393
 SpriteRenderer:
@@ -44584,7 +44640,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.9450981, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -44780,8 +44836,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762761919}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.35500002, y: 1.1099999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.7, y: 6.04, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 33
@@ -44827,7 +44883,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -45239,7 +45295,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 11
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1783286301
 SpriteRenderer:
@@ -45282,7 +45338,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.6627451, g: 1, b: 0.29411766, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -45636,7 +45692,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 26
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1798375088
 SpriteRenderer:
@@ -45679,7 +45735,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46346,7 +46402,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 17
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1828182012
 SpriteRenderer:
@@ -46389,7 +46445,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.87843144, b: 0.45882356, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46483,7 +46539,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2144429109}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -46752,7 +46808,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1835089573
 SpriteRenderer:
@@ -46795,7 +46851,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.6627451, g: 1, b: 0.29411766, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -47082,7 +47138,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 433443040}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -47156,8 +47212,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846780029}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.36500025, y: 1.1099999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.2, y: 6.04, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 30
@@ -47203,7 +47259,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.9450981, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -47531,7 +47587,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 499343282}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -48011,7 +48067,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 477899908}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -48144,7 +48200,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1923291083}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -48427,7 +48483,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 974395707}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -48580,8 +48636,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911310592}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.5949998, y: -0.089999914, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.595, y: 3.858, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 27
@@ -48768,11 +48824,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1923291081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae0e0ebb4f5ca3438a5a1b864a5a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a1a78266b77b41ae99a72f17b0680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgColorBoard: {fileID: 145569231}
-  m_sprColor: {fileID: 1746945782}
+  m_sprColor:
+  - {fileID: 1798375088}
+  - {fileID: 2111594874}
+  - {fileID: 203655113}
+  - {fileID: 2022620753}
+  - {fileID: 2022620753}
+  - {fileID: 516993180}
+  - {fileID: 410682803}
+  - {fileID: 410682803}
   m_listColorValue:
   - {fileID: 343946479}
   - {fileID: 1714275474}
@@ -49014,11 +49078,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925655780}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.36500025, y: -1.295, z: 0}
+  m_LocalPosition: {x: -0.36500025, y: -1.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 12
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1925655782
 SpriteRenderer:
@@ -49061,7 +49125,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.87843144, b: 0.45882356, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -50398,7 +50462,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 196617375}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickDown
         m_Mode: 3
         m_Arguments:
@@ -50786,8 +50850,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022620751}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.11499977, y: -1.295, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.9, y: -4.88, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 6
@@ -50833,7 +50897,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.9607844, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51276,40 +51340,40 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1649675773}
-  - {fileID: 161552404}
-  - {fileID: 30389159}
   - {fileID: 442342316}
-  - {fileID: 166339731}
-  - {fileID: 1602033575}
   - {fileID: 1069745262}
-  - {fileID: 1584451125}
-  - {fileID: 1390571583}
   - {fileID: 1147057327}
-  - {fileID: 1835089572}
-  - {fileID: 1783286300}
   - {fileID: 1925655781}
-  - {fileID: 1735055107}
-  - {fileID: 1743737392}
-  - {fileID: 841290751}
-  - {fileID: 1228289122}
-  - {fileID: 1828182011}
-  - {fileID: 2068281513}
-  - {fileID: 2075915394}
-  - {fileID: 263772551}
-  - {fileID: 1521207208}
-  - {fileID: 656921001}
-  - {fileID: 2140155890}
-  - {fileID: 2111594873}
-  - {fileID: 203655112}
-  - {fileID: 1798375087}
-  - {fileID: 1137717582}
-  - {fileID: 1338606210}
   - {fileID: 1361244687}
-  - {fileID: 523128291}
+  - {fileID: 1798375087}
+  - {fileID: 1521207208}
+  - {fileID: 2068281513}
+  - {fileID: 1735055107}
+  - {fileID: 161552404}
+  - {fileID: 166339731}
+  - {fileID: 1584451125}
+  - {fileID: 1835089572}
+  - {fileID: 1228289122}
+  - {fileID: 1137717582}
+  - {fileID: 2111594873}
+  - {fileID: 2075915394}
+  - {fileID: 656921001}
+  - {fileID: 1743737392}
+  - {fileID: 30389159}
+  - {fileID: 1602033575}
+  - {fileID: 1390571583}
+  - {fileID: 1783286300}
+  - {fileID: 1828182011}
+  - {fileID: 1338606210}
+  - {fileID: 203655112}
+  - {fileID: 263772551}
+  - {fileID: 2140155890}
+  - {fileID: 841290751}
+  - {fileID: 1387007738}
+  - {fileID: 883821016}
   - {fileID: 1697501432}
   - {fileID: 1273551993}
-  - {fileID: 883821016}
-  - {fileID: 1387007738}
+  - {fileID: 523128291}
   m_Father: {fileID: 117104112}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
@@ -51658,8 +51722,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057985710}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.5949998, y: -0.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.9, y: -7.06, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 1
@@ -51705,7 +51769,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.16862746, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51799,7 +51863,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1268173477}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -51932,7 +51996,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 974395707}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -52127,7 +52191,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 18
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2068281514
 SpriteRenderer:
@@ -52170,7 +52234,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.15294118, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -52288,7 +52352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2075915395
 SpriteRenderer:
@@ -52331,7 +52395,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0.7490196, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53310,7 +53374,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 24
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2111594874
 SpriteRenderer:
@@ -53353,7 +53417,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53992,7 +54056,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034672482}
-  m_RootOrder: 23
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2140155891
 SpriteRenderer:
@@ -54035,7 +54099,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 0, g: 0.15294118, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -54169,11 +54233,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2144429107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae0e0ebb4f5ca3438a5a1b864a5a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 181a1a78266b77b41ae99a72f17b0680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_imgColorBoard: {fileID: 402540381}
-  m_sprColor: {fileID: 10419017}
+  m_sprColor:
+  - {fileID: 1925655782}
+  - {fileID: 1228289123}
+  - {fileID: 1828182012}
+  - {fileID: 523128292}
+  - {fileID: 757625553}
+  - {fileID: 1160054854}
+  - {fileID: 2147086672}
+  - {fileID: 819038867}
   m_listColorValue:
   - {fileID: 229496916}
   - {fileID: 1651253629}
@@ -54262,7 +54334,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 196617375}
-        m_TargetAssemblyTypeName: CUIsColorController, Assembly-CSharp
+        m_TargetAssemblyTypeName: CUIsColorController02, Assembly-CSharp
         m_MethodName: OnClickUp
         m_Mode: 3
         m_Arguments:
@@ -54336,8 +54408,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147086670}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.35500002, y: -0.089999914, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2, y: 1.66, z: 0}
+  m_LocalScale: {x: 5.2, y: 5.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1606815608}
   m_RootOrder: 24
@@ -54383,7 +54455,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 2c9abd7c5b406a34d87f65ae611ec8c0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

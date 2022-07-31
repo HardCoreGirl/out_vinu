@@ -62,11 +62,11 @@ public class CGameEngine : MonoBehaviour
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideAnswer();
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideAllQuiz();
 
-        //m_goTutorial.SetActive(false);
+        m_goTutorial.SetActive(false);
 
-        //HideAnswerTile();
+        HideAnswerTile();
 
-        //PlayGridStage();
+        PlayGridStage();
     }
 
     // Update is called once per frame
