@@ -35,6 +35,8 @@ public class CGameEngine : MonoBehaviour
     }
     #endregion
 
+    public GameObject[] m_listGameBoard = new GameObject[2];
+
     public GameObject[] m_listTestBG = new GameObject[6];
 
     public GameObject[] m_listFrameParent = new GameObject[4];
@@ -58,6 +60,9 @@ public class CGameEngine : MonoBehaviour
     {
         CGameData.Instance.InitGameData();
 
+
+        CGameData.Instance.SetStage(1000);
+
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideBtnsNext();
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideAnswer();
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideAllQuiz();
@@ -78,16 +83,29 @@ public class CGameEngine : MonoBehaviour
     public void PlayGridStage()
     {
         int nStage = CGameData.Instance.GetStage();
+
+        HideAllGameBoard();
+
         Debug.Log(nStage);
-        if( nStage <= 2)     // 0, 1, 2
+        if( nStage < 1000)
         {
-            PlayGridStageMath();
-        } else if (nStage <= 5)  // 3, 4, 5
+            ShowGameBoard(0);
+            if (nStage <= 2)     // 0, 1, 2
+            {
+                PlayGridStageMath();
+            }
+            else if (nStage <= 5)  // 3, 4, 5
+            {
+                PlayGridStageEnglish();
+            }
+            else   // 6, 7, 8
+            {
+                PlayGridStagePic();
+            }
+        } else if (nStage < 2000 )
         {
-            PlayGridStageEnglish();
-        } else   // 6, 7, 8
-        {
-            PlayGridStagePic();
+            ShowGameBoard(1);
+            PlayGridStageTrash();
         }
     }
 
@@ -354,6 +372,16 @@ public class CGameEngine : MonoBehaviour
         m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowBtnsNext();
     }
 
+    public void PlayGridStageTrash()
+    {
+        StartCoroutine("ProcessShowTileTrash");
+    }
+
+    IEnumerator ProcessShowTileTrash()
+    {
+        yield return new WaitForSeconds(0.1f);
+    }
+
 
 
     public void SetGameStep(int nStep)
@@ -422,5 +450,23 @@ public class CGameEngine : MonoBehaviour
         {
             m_listAnswerTile[i].SetActive(false);
         }
+    }
+
+    public void ShowGameBoard(int nIndex)
+    {
+        m_listGameBoard[nIndex].SetActive(true);
+    }
+
+    public void HideAllGameBoard()
+    {
+        for(int i = 0; i < m_listGameBoard.Length; i++)
+        {
+            HideGameBoard(i);
+        }
+    }
+
+    public void HideGameBoard(int nIndex)
+    {
+        m_listGameBoard[nIndex].SetActive(false);
     }
 }
