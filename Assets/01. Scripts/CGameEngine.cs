@@ -47,6 +47,10 @@ public class CGameEngine : MonoBehaviour
 
     public GameObject[] m_listAnswerTile = new GameObject[4];
 
+    public GameObject[] m_listBoard002Frames = new GameObject[4];
+    public GameObject[] m_listBoard002Answer = new GameObject[4];
+    public GameObject[] m_listBoard002Star = new GameObject[8];
+
     public GameObject m_goQuiz;
 
     public GameObject m_goTutorial;
@@ -62,6 +66,7 @@ public class CGameEngine : MonoBehaviour
 
 
         CGameData.Instance.SetStage(1000);
+        //CGameData.Instance.SetStage(0);
 
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideBtnsNext();
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideAnswer();
@@ -379,7 +384,138 @@ public class CGameEngine : MonoBehaviour
 
     IEnumerator ProcessShowTileTrash()
     {
+        for(int i = 0; i < m_listBoard002Star.Length; i++)
+        {
+            m_listBoard002Star[i].SetActive(false);
+        }
+
+        for(int i = 0; i < m_listBoard002Answer.Length; i++)
+        {
+            m_listBoard002Answer[i].SetActive(true);
+            Color clr = Color.white;
+            clr.a = 0;
+            m_listBoard002Answer[i].GetComponent<SpriteRenderer>().color = clr;
+        }
+
+        for (int i = 0; i < m_listBoard002Frames.Length; i++)
+        {
+            if( i == 1 || i == 2)
+                m_listBoard002Frames[i].transform.localPosition = new Vector3(2.2f, -6f, 0);
+            else
+                m_listBoard002Frames[i].transform.localPosition = new Vector3(-2.2f, -6f, 0);
+        }
+
+        float fTime = 0;
+        float fFramePoz = 0;
+
+        while(true)
+        {
+            fTime += (Time.deltaTime * 6);
+            fFramePoz = fTime - 6;
+
+            if (fFramePoz > 0.15)
+                break;
+
+            for (int i = 0; i < m_listBoard002Frames.Length; i++)
+            {
+                if (i == 1 || i == 2)
+                    m_listBoard002Frames[i].transform.localPosition = new Vector3(2.2f, fFramePoz, 0);
+                else
+                    m_listBoard002Frames[i].transform.localPosition = new Vector3(-2.2f, fFramePoz, 0);
+            }
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        for (int i = 0; i < m_listBoard002Frames.Length; i++)
+        {
+            if (i == 1 || i == 2)
+                m_listBoard002Frames[i].transform.localPosition = new Vector3(2.2f, 0.15f, 0);
+            else
+                m_listBoard002Frames[i].transform.localPosition = new Vector3(-2.2f, 0.15f, 0);
+        }
+
+
         yield return new WaitForSeconds(0.1f);
+
+        m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowQuiz(CGameData.Instance.GetStage());
+
+        fTime = 0;
+
+
+
+        while(true)
+        {
+            fTime += (Time.deltaTime * 2f);
+            if (fTime >= 1)
+                break;
+
+            for (int i = 0; i < m_listBoard002Answer.Length; i++)
+            {
+                m_listBoard002Answer[i].SetActive(true);
+                Color clr = Color.white;
+                clr.a = fTime;
+                m_listBoard002Answer[i].GetComponent<SpriteRenderer>().color = clr;
+            }
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        for (int i = 0; i < m_listBoard002Answer.Length; i++)
+        {
+            m_listBoard002Answer[i].SetActive(true);
+            Color clr = Color.white;
+            m_listBoard002Answer[i].GetComponent<SpriteRenderer>().color = clr;
+        }
+
+        StartCoroutine("ProcessShowStar");
+    }
+
+    IEnumerator ProcessShowStar()
+    {
+        for (int i = 0; i < m_listBoard002Star.Length; i++)
+        {
+            m_listBoard002Star[i].SetActive(true);
+        }
+
+        float fScale = 1;
+        int nDir = 0;
+
+        int nCount = 0;
+        while(true)
+        {
+            if( nDir == 0 )
+                fScale -= (Time.deltaTime * 2);
+            else
+                fScale += (Time.deltaTime * 2);
+
+            if (fScale <= -1)
+            {
+                fScale = -1;
+                nDir = 1;
+            } else if(fScale >= 1)
+            {
+                fScale = 1;
+                nDir = 0;
+                nCount++;
+            }
+
+            if (nCount >= 2)
+                break;
+
+            for (int i = 0; i < m_listBoard002Star.Length; i++)
+            {
+                m_listBoard002Star[i].transform.localScale = new Vector3(fScale, 1, 1);
+            }
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        for (int i = 0; i < m_listBoard002Star.Length; i++)
+        {
+            m_listBoard002Star[i].transform.localScale = new Vector3(1, 1, 1);
+        }
+
     }
 
 

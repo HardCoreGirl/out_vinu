@@ -16,7 +16,7 @@ public class CUIsBoard001 : MonoBehaviour
 
     public GameObject m_goFinishMenu;
 
-    public GameObject[] m_listQuiz = new GameObject[9];
+    public GameObject[] m_listQuiz = new GameObject[10];
 
     public GameObject[] m_listBtnsTutorial = new GameObject[4];
 
@@ -200,7 +200,13 @@ public class CUIsBoard001 : MonoBehaviour
     public void ShowQuiz(int nIndex)
     {
         HideAllQuiz();
-        m_listQuiz[nIndex].SetActive(true);
+
+        int nQuiz = nIndex;
+
+        if (nIndex >= 1000)
+            nQuiz = nIndex - 1000 + 9;
+
+        m_listQuiz[nQuiz].SetActive(true);
     }
     public void HideQuiz(int nIndex)
     {
