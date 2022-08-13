@@ -64,6 +64,7 @@ public class CGameEngine : MonoBehaviour
     {
         CGameData.Instance.InitGameData();
 
+        // Test
 
         CGameData.Instance.SetStage(1000);
         //CGameData.Instance.SetStage(0);
