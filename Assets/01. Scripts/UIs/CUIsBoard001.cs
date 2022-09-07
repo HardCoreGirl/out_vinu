@@ -70,8 +70,22 @@ public class CUIsBoard001 : MonoBehaviour
 
         } else if (CGameEngine.Instance.GetGameStep() == 2)
         {
-            CGameEngine.Instance.SetGameStep(3);
-            ShowFinishMenu();
+            //CGameEngine.Instance.SetGameStep(3);
+            //ShowFinishMenu();
+            int nStage = CGameData.Instance.GetStage() + 1;
+
+            if( nStage == 3 || nStage ==  6 || nStage == 9)
+            {
+                CGameEngine.Instance.LoadLobby();
+                return;
+            }
+
+            if (nStage >= 9)
+                nStage = 0;
+
+            CGameData.Instance.SetStage(nStage);
+            Debug.Log(CGameData.Instance.GetStage());
+            SceneManager.LoadScene("InGame");
         }
         else
         {

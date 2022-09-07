@@ -4,6 +4,8 @@ using UnityEngine;
 
 using UnityEngine.Video;
 
+using UnityEngine.SceneManagement;
+
 public class CGameEngine : MonoBehaviour
 {
     #region SingleTon
@@ -43,13 +45,24 @@ public class CGameEngine : MonoBehaviour
 
     public GameObject[] m_listQuizMath = new GameObject[2];
 
+    public GameObject m_goUICommon;
     public GameObject[] m_goUIBoard = new GameObject[2];
 
     public GameObject[] m_listAnswerTile = new GameObject[4];
 
+    public GameObject[] m_listFrameType = new GameObject[2];
     public GameObject[] m_listBoard002Frames = new GameObject[4];
+    public GameObject[] m_listFrameKor = new GameObject[4];
+
+    public GameObject[] m_listAnswerType = new GameObject[2];
     public GameObject[] m_listBoard002Answer = new GameObject[4];
+    public GameObject[] m_listAnswerKor = new GameObject[4];
+
     public GameObject[] m_listBoard002Star = new GameObject[8];
+    public GameObject[] m_listStarKor = new GameObject[8];
+
+    public GameObject[] m_listBoard002Toturial = new GameObject[4];
+    public GameObject[] m_listToturialKor = new GameObject[4];
 
     public GameObject m_goQuiz;
 
@@ -64,7 +77,7 @@ public class CGameEngine : MonoBehaviour
     {
         CGameData.Instance.InitGameData();
 
-        CGameData.Instance.SetStage(1000);
+        //CGameData.Instance.SetStage(2000);
         //CGameData.Instance.SetStage(0);
 
         m_goUIBoard[0].GetComponent<CUIsBoard001>().HideBtnsNext();
@@ -90,7 +103,7 @@ public class CGameEngine : MonoBehaviour
 
         HideAllGameBoard();
 
-        Debug.Log(nStage);
+        Debug.Log("PlayGridStage : " + nStage);
         if( nStage < 1000)
         {
             ShowGameBoard(0);
@@ -110,6 +123,10 @@ public class CGameEngine : MonoBehaviour
         {
             ShowGameBoard(1);
             PlayGridStageTrash();
+        } else if (nStage < 3000)
+        {
+            ShowGameBoard(1);
+            PlayGridStageKorean();
         }
     }
 
@@ -383,9 +400,16 @@ public class CGameEngine : MonoBehaviour
 
     IEnumerator ProcessShowTileTrash()
     {
+        ShowFrameType(0);
+
         for(int i = 0; i < m_listBoard002Star.Length; i++)
         {
             m_listBoard002Star[i].SetActive(false);
+        }
+
+        for(int i = 0; i < m_listBoard002Toturial.Length; i++)
+        {
+            m_listBoard002Toturial[i].SetActive(false);
         }
 
         for(int i = 0; i < m_listBoard002Answer.Length; i++)
@@ -437,13 +461,32 @@ public class CGameEngine : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
 
-        m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowQuiz(CGameData.Instance.GetStage());
+        //m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowQuiz(CGameData.Instance.GetStage());
+        m_goUICommon.GetComponent<CUIsCommon>().ShowQuiz(CGameData.Instance.GetStage());
+        m_goUIBoard[1].SetActive(true);
+
 
         fTime = 0;
 
+        SetGameStep(1);
 
+        //StartCoroutine("ProcessShowStar");
+    }
 
-        while(true)
+    public void ShowBoard002Answer()
+    {
+        StartCoroutine("ProcessShowBoard002Answer");
+    }
+
+    IEnumerator ProcessShowBoard002Answer()
+    {
+        for (int i = 0; i < m_listBoard002Toturial.Length; i++)
+        {
+            m_listBoard002Toturial[i].SetActive(true);
+        }
+
+        float fTime = 0;
+        while (true)
         {
             fTime += (Time.deltaTime * 2f);
             if (fTime >= 1)
@@ -467,11 +510,6 @@ public class CGameEngine : MonoBehaviour
             m_listBoard002Answer[i].GetComponent<SpriteRenderer>().color = clr;
         }
 
-        StartCoroutine("ProcessShowStar");
-    }
-
-    IEnumerator ProcessShowStar()
-    {
         for (int i = 0; i < m_listBoard002Star.Length; i++)
         {
             m_listBoard002Star[i].SetActive(true);
@@ -481,18 +519,19 @@ public class CGameEngine : MonoBehaviour
         int nDir = 0;
 
         int nCount = 0;
-        while(true)
+        while (true)
         {
-            if( nDir == 0 )
-                fScale -= (Time.deltaTime * 2);
+            if (nDir == 0)
+                fScale -= (Time.deltaTime * 1);
             else
-                fScale += (Time.deltaTime * 2);
+                fScale += (Time.deltaTime * 1);
 
             if (fScale <= -1)
             {
                 fScale = -1;
                 nDir = 1;
-            } else if(fScale >= 1)
+            }
+            else if (fScale >= 1)
             {
                 fScale = 1;
                 nDir = 0;
@@ -513,6 +552,170 @@ public class CGameEngine : MonoBehaviour
         for (int i = 0; i < m_listBoard002Star.Length; i++)
         {
             m_listBoard002Star[i].transform.localScale = new Vector3(1, 1, 1);
+        }
+
+    }
+
+
+    public void PlayGridStageKorean()
+    {
+        StartCoroutine("ProcessShowTileKorean");
+    }
+
+    IEnumerator ProcessShowTileKorean()
+    {
+        ShowFrameType(1);
+
+        for (int i = 0; i < m_listStarKor.Length; i++)
+        {
+            m_listStarKor[i].SetActive(false);
+        }
+
+        for (int i = 0; i < m_listToturialKor.Length; i++)
+        {
+            m_listToturialKor[i].SetActive(false);
+        }
+
+        for (int i = 0; i < m_listAnswerKor.Length; i++)
+        {
+            m_listAnswerKor[i].SetActive(true);
+            Color clr = Color.white;
+            clr.a = 0;
+            m_listAnswerKor[i].GetComponent<SpriteRenderer>().color = clr;
+        }
+
+        for (int i = 0; i < m_listFrameKor.Length; i++)
+        {
+            if (i == 1 || i == 2)
+                m_listFrameKor[i].transform.localPosition = new Vector3(2.2f, -6f, 0);
+            else
+                m_listFrameKor[i].transform.localPosition = new Vector3(-2.2f, -6f, 0);
+        }
+
+        float fTime = 0;
+        float fFramePoz = 0;
+
+        while (true)
+        {
+            fTime += (Time.deltaTime * 6);
+            fFramePoz = fTime - 6;
+
+            if (fFramePoz > 0.15)
+                break;
+
+            for (int i = 0; i < m_listFrameKor.Length; i++)
+            {
+                if (i == 1 || i == 2)
+                    m_listFrameKor[i].transform.localPosition = new Vector3(2.2f, fFramePoz, 0);
+                else
+                    m_listFrameKor[i].transform.localPosition = new Vector3(-2.2f, fFramePoz, 0);
+            }
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        for (int i = 0; i < m_listFrameKor.Length; i++)
+        {
+            if (i == 1 || i == 2)
+                m_listFrameKor[i].transform.localPosition = new Vector3(2.2f, 0.15f, 0);
+            else
+                m_listFrameKor[i].transform.localPosition = new Vector3(-2.2f, 0.15f, 0);
+        }
+
+
+        yield return new WaitForSeconds(0.1f);
+
+        //m_goUIBoard[0].GetComponent<CUIsBoard001>().ShowQuiz(CGameData.Instance.GetStage());
+        m_goUICommon.GetComponent<CUIsCommon>().ShowQuiz(CGameData.Instance.GetStage());
+        m_goUIBoard[1].SetActive(true);
+
+
+        fTime = 0;
+
+        SetGameStep(1);
+
+        //StartCoroutine("ProcessShowStar");
+    }
+
+    public void ShowGridKorAnswer()
+    {
+        StartCoroutine("ProcessGridKorAnswer");
+    }
+
+    IEnumerator ProcessGridKorAnswer()
+    {
+        for (int i = 0; i < m_listToturialKor.Length; i++)
+        {
+            m_listToturialKor[i].SetActive(true);
+        }
+
+        float fTime = 0;
+        while (true)
+        {
+            fTime += (Time.deltaTime * 2f);
+            if (fTime >= 1)
+                break;
+
+            for (int i = 0; i < m_listAnswerKor.Length; i++)
+            {
+                m_listAnswerKor[i].SetActive(true);
+                Color clr = Color.white;
+                clr.a = fTime;
+                m_listAnswerKor[i].GetComponent<SpriteRenderer>().color = clr;
+            }
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        for (int i = 0; i < m_listAnswerKor.Length; i++)
+        {
+            m_listAnswerKor[i].SetActive(true);
+            Color clr = Color.white;
+            m_listAnswerKor[i].GetComponent<SpriteRenderer>().color = clr;
+        }
+
+        for (int i = 0; i < m_listStarKor.Length; i++)
+        {
+            m_listStarKor[i].SetActive(true);
+        }
+
+        float fScale = 1;
+        int nDir = 0;
+
+        int nCount = 0;
+        while (true)
+        {
+            if (nDir == 0)
+                fScale -= (Time.deltaTime * 1);
+            else
+                fScale += (Time.deltaTime * 1);
+
+            if (fScale <= -1)
+            {
+                fScale = -1;
+                nDir = 1;
+            }
+            else if (fScale >= 1)
+            {
+                fScale = 1;
+                nDir = 0;
+                nCount++;
+            }
+
+            if (nCount >= 2)
+                break;
+
+            for (int i = 0; i < m_listStarKor.Length; i++)
+            {
+                m_listStarKor[i].transform.localScale = new Vector3(fScale, 1, 1);
+            }
+
+            yield return new WaitForEndOfFrame();
+        }
+
+        for (int i = 0; i < m_listStarKor.Length; i++)
+        {
+            m_listStarKor[i].transform.localScale = new Vector3(1, 1, 1);
         }
 
     }
@@ -604,4 +807,24 @@ public class CGameEngine : MonoBehaviour
     {
         m_listGameBoard[nIndex].SetActive(false);
     }
+
+    public void ShowFrameType(int nIndex)
+    {
+        HideAllFrameType();
+        m_listFrameType[nIndex].SetActive(true);
+    }
+
+    public void HideAllFrameType()
+    {
+        for (int i = 0; i < m_listFrameType.Length; i++)
+            m_listFrameType[i].SetActive(false);
+    }
+
+    // Scene ------------------------------------------
+    public void LoadLobby()
+    {
+        CGameData.Instance.SetLobbyPage(2);
+        SceneManager.LoadScene("Lobby");
+    }
+    // ------------------------------------------------
 }

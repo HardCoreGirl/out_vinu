@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/00. Scenes/Lobby.unity
+    guid: 7a7405f6fca05f34da81814cc841ced1
+  - enabled: 1
     path: Assets/00. Scenes/InGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/00. Scenes/Follow.unity
+    guid: a9d01da570acded46b1cf714497839ff
+  - enabled: 1
+    path: Assets/00. Scenes/Music.unity
+    guid: 8509d51d1bfbcb04d82c8c04105e9e61
+  - enabled: 1
+    path: Assets/00. Scenes/Emo.unity
+    guid: 94bb286a8e6ffe64f87c3c47795c9c61
   m_configObjects: {}
