@@ -6,8 +6,10 @@ using UnityEngine.UI;
 
 public class CUIsColorController02 : MonoBehaviour
 {
+    public int m_nColorIndex;
     public Image m_imgColorBoard;
     public SpriteRenderer[] m_sprColor = new SpriteRenderer[8];
+    public SpriteRenderer m_sprSettingColor;
     public Text[] m_listColorValue = new Text[3];
 
     private Color m_clrBoard;
@@ -16,9 +18,14 @@ public class CUIsColorController02 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        CGameData.Instance.InitGameData();
+
+        m_imgColorBoard.color = CGameData.Instance.GetColor(m_nColorIndex);
+
         m_clrBoard = m_imgColorBoard.color;
         for(int i = 0; i < m_sprColor.Length; i++)
             m_sprColor[i].color = m_clrBoard;
+        m_sprSettingColor.color = m_clrBoard;
         m_vecColor = Clr2Vec(m_clrBoard);
 
         Debug.Log(m_vecColor);
@@ -54,7 +61,7 @@ public class CUIsColorController02 : MonoBehaviour
 
     public void OnClickUp(int nIndex)
     {
-
+        Debug.Log("Color Index : " + m_nColorIndex + ", RGB Index : " + nIndex);
         int nValue = int.Parse(m_listColorValue[nIndex].text);
         nValue++;
         if (nValue >= 255)
@@ -72,6 +79,24 @@ public class CUIsColorController02 : MonoBehaviour
         m_imgColorBoard.color = Vec2Clr(m_vecColor);
         for(int i = 0; i < m_sprColor.Length; i++)
             m_sprColor[i].color = Vec2Clr(m_vecColor);
+
+        m_sprSettingColor.color = Vec2Clr(m_vecColor);
+
+        string strKey = "";
+
+        for (int i = 0; i < 3; i++)
+        {
+            strKey = "CLR_" + m_nColorIndex.ToString("00") + "_" + i.ToString("00");
+            PlayerPrefs.SetInt(strKey, listValue[i]);
+            //Debug.Log(strKey + " : " + listValue[i]);
+        }
+
+        CGameData.Instance.SetColor(m_nColorIndex, listValue[0], listValue[1], listValue[2]);
+
+        //m_listColor[0] = Vec2Clr(new Vector3((float)PlayerPrefs.GetInt("CLR_00_00", 255),
+        //     (float)PlayerPrefs.GetInt("CLR_00_01", 255),
+        //     (float)PlayerPrefs.GetInt("CLR_00_02", 255)));
+
     }
 
     public void OnClickDown(int nIndex)
@@ -93,5 +118,18 @@ public class CUIsColorController02 : MonoBehaviour
         m_imgColorBoard.color = Vec2Clr(m_vecColor);
         for (int i = 0; i < m_sprColor.Length; i++)
             m_sprColor[i].color = Vec2Clr(m_vecColor);
+
+        m_sprSettingColor.color = Vec2Clr(m_vecColor);
+
+        string strKey = "";
+        for (int i = 0; i < 3; i++)
+        {
+            strKey = "CLR_" + m_nColorIndex.ToString("00") + "_" + i.ToString("00");
+            PlayerPrefs.SetInt(strKey, listValue[i]);
+        }
+
+        CGameData.Instance.SetColor(m_nColorIndex, listValue[0], listValue[1], listValue[2]); 
     }
+
+
 }

@@ -8,11 +8,17 @@ public class CUIsBoard24 : MonoBehaviour
     public GameObject m_goLeftMissionCommon;
     public GameObject[] m_listLeftMission = new GameObject[4];
 
+    public GameObject m_goRightButton;
+    public GameObject[] m_listRightMission = new GameObject[4];
+
     // Start is called before the first frame update
     void Start()
     {
         HideAllLeftMission();
         m_goLeftButton.SetActive(true);
+
+        HideAllRightMission();
+        m_goRightButton.SetActive(true);
     }
 
     // Update is called once per frame
@@ -49,5 +55,28 @@ public class CUIsBoard24 : MonoBehaviour
         m_goLeftButton.SetActive(true);
     }
 
-    
+    public void HideAllRightMission()
+    {
+        for (int i = 0; i < m_listRightMission.Length; i++)
+        {
+            m_listRightMission[i].SetActive(false);
+        }
+    }
+
+    public void ShowRightMission(int nIndex)
+    {
+        m_listRightMission[nIndex].SetActive(true);
+    }
+
+    public void OnClickRightMission(int nIndex)
+    {
+        m_goRightButton.SetActive(false);
+        ShowRightMission(nIndex);
+    }
+
+    public void OnClickRightMissionReset()
+    {
+        HideAllRightMission();
+        m_goRightButton.SetActive(true);
+    }
 }

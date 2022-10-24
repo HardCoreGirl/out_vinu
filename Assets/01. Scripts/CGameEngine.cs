@@ -38,6 +38,8 @@ public class CGameEngine : MonoBehaviour
     #endregion
 
     public GameObject[] m_listGameBoard = new GameObject[2];
+    public GameObject m_goUISetting;
+    public GameObject m_goSettingBoard;
 
     public GameObject[] m_listTestBG = new GameObject[6];
 
@@ -87,6 +89,8 @@ public class CGameEngine : MonoBehaviour
         m_goTutorial.SetActive(false);
 
         HideAnswerTile();
+        m_goUISetting.SetActive(false);
+        m_goSettingBoard.SetActive(false);
 
         PlayGridStage();
     }
@@ -127,6 +131,12 @@ public class CGameEngine : MonoBehaviour
         {
             ShowGameBoard(1);
             PlayGridStageKorean();
+        } else if (nStage >= 99999999 )
+        {
+            Debug.Log("TEst!!!!!");
+            HideAllGameBoard();
+            m_goUISetting.SetActive(true);
+            m_goSettingBoard.SetActive(true);
         }
     }
 
@@ -801,6 +811,8 @@ public class CGameEngine : MonoBehaviour
         {
             HideGameBoard(i);
         }
+
+        m_goUISetting.SetActive(false);
     }
 
     public void HideGameBoard(int nIndex)

@@ -20,4 +20,10 @@ public class CUIsLobbyCommon : MonoBehaviour
     {
         CLobbyManager.Instance.ShowUIs(1);
     }
+
+    public void OnClickSetting()
+    {
+        CGameData.Instance.SetStage(99999999);
+        CLobbyManager.Instance.LoadInGame();
+    }
 }

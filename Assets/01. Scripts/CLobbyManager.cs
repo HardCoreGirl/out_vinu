@@ -73,10 +73,10 @@ public class CLobbyManager : MonoBehaviour
         HideAllUIs();
         m_listUIs[nIndex].SetActive(true);
 
-        if (nIndex == 0)
-            m_goTitle.SetActive(true);
-        else
-            m_goTitle.SetActive(false);
+        //if (nIndex == 0)
+        //    m_goTitle.SetActive(true);
+        //else
+        //    m_goTitle.SetActive(false);
 
         //SceneManager.LoadScene("Lobby");
     }

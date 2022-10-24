@@ -14,6 +14,8 @@ public class CUIsBoard001 : MonoBehaviour
     public GameObject[] m_listAnswerBoard = new GameObject[2];
     public Text[] m_listAnswer = new Text[2];
 
+    public GameObject[] m_listAniAnswer = new GameObject[14];
+
     public GameObject m_goFinishMenu;
 
     public GameObject[] m_listQuiz = new GameObject[10];
@@ -30,6 +32,8 @@ public class CUIsBoard001 : MonoBehaviour
         //HideBtnsTutorial();
         HideBtnsTutorialAll();
         HideFinishMenu();
+
+        HideAllAniAnswer();
     }
 
     // Update is called once per frame
@@ -45,28 +49,30 @@ public class CUIsBoard001 : MonoBehaviour
         {
             CGameEngine.Instance.SetGameStep(2);
             ShowAnswer();
-            CGameEngine.Instance.ShowTutorial(0);
+            //CGameEngine.Instance.ShowTutorial(0);
             ShowBtnsTutoialAll();
 
-            if (CGameData.Instance.GetStage() == 0)
-                CGameEngine.Instance.ShowAnswerTile(0, 0);
-            else if (CGameData.Instance.GetStage() == 1)
-                CGameEngine.Instance.ShowAnswerTile(1, 1);
-            else if (CGameData.Instance.GetStage() == 2)
-                CGameEngine.Instance.ShowAnswerTile(1, 0);
-            else if (CGameData.Instance.GetStage() == 3)
-                CGameEngine.Instance.ShowAnswerTile(2, 1);
-            else if (CGameData.Instance.GetStage() == 4)
-                CGameEngine.Instance.ShowAnswerTile(3, 1);
-            else if (CGameData.Instance.GetStage() == 5)
-                CGameEngine.Instance.ShowAnswerTile(3, 2);
-            else if (CGameData.Instance.GetStage() == 6)
-                CGameEngine.Instance.ShowAnswerTile(4, 2);
-            else if (CGameData.Instance.GetStage() == 7)
-                CGameEngine.Instance.ShowAnswerTile(3, 3);
-            else if (CGameData.Instance.GetStage() == 8)
-                CGameEngine.Instance.ShowAnswerTile(4, 3);
+            //if (CGameData.Instance.GetStage() == 0)
+            //    CGameEngine.Instance.ShowAnswerTile(0, 0);
+            //else if (CGameData.Instance.GetStage() == 1)
+            //    CGameEngine.Instance.ShowAnswerTile(1, 1);
+            //else if (CGameData.Instance.GetStage() == 2)
+            //    CGameEngine.Instance.ShowAnswerTile(1, 0);
+            //else if (CGameData.Instance.GetStage() == 3)
+            //    CGameEngine.Instance.ShowAnswerTile(2, 1);
+            //else if (CGameData.Instance.GetStage() == 4)
+            //    CGameEngine.Instance.ShowAnswerTile(3, 1);
+            //else if (CGameData.Instance.GetStage() == 5)
+            //    CGameEngine.Instance.ShowAnswerTile(3, 2);
+            //else if (CGameData.Instance.GetStage() == 6)
+            //    CGameEngine.Instance.ShowAnswerTile(4, 2);
+            //else if (CGameData.Instance.GetStage() == 7)
+            //    CGameEngine.Instance.ShowAnswerTile(3, 3);
+            //else if (CGameData.Instance.GetStage() == 8)
+            //    CGameEngine.Instance.ShowAnswerTile(4, 3);
 
+
+            ShowAniAnswer(CGameData.Instance.GetStage());
 
         } else if (CGameEngine.Instance.GetGameStep() == 2)
         {
@@ -98,7 +104,9 @@ public class CUIsBoard001 : MonoBehaviour
 
     public void OnClickPlayTutorial(int nIndex)
     {
-        CGameEngine.Instance.PlayerTutorialVideo(nIndex);
+        //CGameEngine.Instance.PlayerTutorialVideo(nIndex);
+
+        m_listAniAnswer[CGameData.Instance.GetStage()].GetComponent<CUIsAniAnswerManager>().PlayAnswer(nIndex);
         StartCoroutine(ProcessPlayTutorial(nIndex));
     }
 
@@ -269,6 +277,24 @@ public class CUIsBoard001 : MonoBehaviour
     public void HideFinishMenu()
     {
         m_goFinishMenu.SetActive(false);
+    }
+
+    public void HideAllAniAnswer()
+    {
+        for (int i = 0; i < m_listAniAnswer.Length; i++)
+            HideAniAnswer(i);
+    }
+
+    public void ShowAniAnswer(int nIndex)
+    {
+        HideAllAniAnswer();
+
+        m_listAniAnswer[nIndex].SetActive(true);
+    }
+
+    public void HideAniAnswer(int nIndex)
+    {
+        m_listAniAnswer[nIndex].SetActive(false);
     }
 }
 
