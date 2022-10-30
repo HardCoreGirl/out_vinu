@@ -35,9 +35,13 @@ public class CLobbyManager : MonoBehaviour
     }
     #endregion
 
-    public GameObject[] m_listUIs = new GameObject[6];
+    public GameObject[] m_listUIs = new GameObject[7];
 
     public GameObject m_goTitle;
+
+    public GameObject m_goSetup;
+
+    public GameObject m_goBtnHome;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +50,7 @@ public class CLobbyManager : MonoBehaviour
 
 
         ShowUIs(CGameData.Instance.GetLobbyPage());
+        HideSetup();
         //ShowUIs(1);
     }
 
@@ -73,12 +78,27 @@ public class CLobbyManager : MonoBehaviour
         HideAllUIs();
         m_listUIs[nIndex].SetActive(true);
 
+        if (nIndex > 1 && nIndex < 6)
+            m_goBtnHome.SetActive(true);
+        else
+            m_goBtnHome.SetActive(false);
+
         //if (nIndex == 0)
         //    m_goTitle.SetActive(true);
         //else
         //    m_goTitle.SetActive(false);
 
         //SceneManager.LoadScene("Lobby");
+    }
+    public void ShowSetup()
+    {
+        m_goSetup.SetActive(true);
+    }
+
+
+    public void HideSetup()
+    {
+        m_goSetup.SetActive(false);
     }
 
     public void LoadInGame()

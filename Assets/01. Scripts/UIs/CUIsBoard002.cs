@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CUIsBoard002 : MonoBehaviour
 {
+    public GameObject[] m_listAnswer = new GameObject[6];
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        HideAllAnswer();   
     }
 
     // Update is called once per frame
@@ -25,9 +27,15 @@ public class CUIsBoard002 : MonoBehaviour
             Debug.Log("Stage : " + CGameData.Instance.GetStage());
 
             if (CGameData.Instance.GetStage() == 1000)
-                CGameEngine.Instance.ShowBoard002Answer();
+            {
+                //CGameEngine.Instance.ShowBoard002Answer();
+                ShowAnswer(0);
+            }
             else if (CGameData.Instance.GetStage() == 2000)
-                CGameEngine.Instance.ShowGridKorAnswer();
+            {
+                //CGameEngine.Instance.ShowGridKorAnswer();
+                ShowAnswer(3);
+            }
             //ShowAnswer();
             //CGameEngine.Instance.ShowTutorial(0);
             //ShowBtnsTutoialAll();
@@ -64,5 +72,24 @@ public class CUIsBoard002 : MonoBehaviour
             //SceneManager.LoadScene("InGame");
         }
 
+    }
+
+    public void HideAllAnswer()
+    {
+        for(int i = 0; i  < m_listAnswer.Length; i++)
+        {
+            HideAnswer(i);
+        }
+    }
+
+    public void ShowAnswer(int nIndex)
+    {
+        HideAllAnswer();
+        m_listAnswer[nIndex].gameObject.SetActive(true);
+    }
+
+    public void HideAnswer(int nIndex)
+    {
+        m_listAnswer[nIndex].gameObject.SetActive(false);
     }
 }

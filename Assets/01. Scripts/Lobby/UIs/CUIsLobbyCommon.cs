@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CUIsLobbyCommon : MonoBehaviour
 {
+    public GameObject m_goBtnSetup;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,11 @@ public class CUIsLobbyCommon : MonoBehaviour
 
     public void OnClickSetting()
     {
-        CGameData.Instance.SetStage(99999999);
-        CLobbyManager.Instance.LoadInGame();
+        //CGameData.Instance.SetStage(99999999);
+        //CLobbyManager.Instance.LoadInGame();
+        CLobbyManager.Instance.ShowUIs(6);
+        CLobbyManager.Instance.ShowSetup();
+
+        m_goBtnSetup.SetActive(false);
     }
 }
