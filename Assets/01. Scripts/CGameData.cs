@@ -88,8 +88,8 @@ public class CGameData : MonoBehaviour
 
             //SetStage(25001);
             //SetStage(99999999);   // 설정페이지
-            //SetStage(6);  // 도형 ( 자전거 )
-            SetStage(31001);
+            SetStage(6);  // 도형 ( 자전거 )
+            //SetStage(31001);
             //SetStage(32001);
 
 

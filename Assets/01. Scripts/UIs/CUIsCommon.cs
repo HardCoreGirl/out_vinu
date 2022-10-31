@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
 public class CUIsCommon : MonoBehaviour
 {
     public GameObject[] m_listQuiz = new GameObject[1];
@@ -50,5 +52,15 @@ public class CUIsCommon : MonoBehaviour
     public void OnClickHome()
     {
         CGameEngine.Instance.LoadLobby();
+    }
+
+    public void OnClickReset()
+    {
+        SceneManager.LoadScene("InGame");
+    }
+
+    public void OnClickSetup()
+    {
+        SceneManager.LoadScene("Setup");
     }
 }

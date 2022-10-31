@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00. Scenes/Emo.unity
     guid: 94bb286a8e6ffe64f87c3c47795c9c61
+  - enabled: 1
+    path: Assets/00. Scenes/Setup.unity
+    guid: e45c49360520c8348b4d8224ec441da2
   m_configObjects: {}

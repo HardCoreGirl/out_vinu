@@ -97,10 +97,27 @@ public class CUIsBoard001 : MonoBehaviour
         {
             //SceneManager.LoadScene("InGame");
         }
-        
-
-     
     }
+
+    public void OnClickBack()
+    {
+        int nStage = CGameData.Instance.GetStage() - 1;
+
+        if (nStage == -1 || nStage == 2 || nStage == 5)
+        {
+            CGameEngine.Instance.LoadLobby();
+            return;
+        }
+
+        if (nStage >= 9)
+            nStage = 0;
+
+        CGameData.Instance.SetStage(nStage);
+        Debug.Log(CGameData.Instance.GetStage());
+        SceneManager.LoadScene("InGame");
+    }
+
+
 
     public void OnClickPlayTutorial(int nIndex)
     {
@@ -131,7 +148,7 @@ public class CUIsBoard001 : MonoBehaviour
     IEnumerator ProcessPlayTutorial(int nIndex)
     {
         HideBtnsTutorial(nIndex);
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(10f);
         ShowBtnsTutorial(nIndex);
     }
 
